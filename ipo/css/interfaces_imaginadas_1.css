@@ -14,10 +14,6 @@ body {
 	background-color: white;
 }
 
-p {
-	text-align: justify;
-}
-
 a {
 	word-wrap: break-word;
   text-decoration: none;

@@ -10,10 +10,6 @@ body {
   margin: 0;
 }
 
-p {
-	text-align: justify;
-}
-
 a {
 	color: hotpink;
 	word-wrap: break-word;
