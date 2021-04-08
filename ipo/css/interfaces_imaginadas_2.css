@@ -10,8 +10,9 @@ body {
   margin: 0;
 }
 
+
 a {
-	color: hotpink;
+	color: #FDBCE5;
 	word-wrap: break-word;
   text-decoration: none;
 	border-bottom: solid 1px transparent;
@@ -19,7 +20,7 @@ a {
 }
 
 a:hover {
-	border-bottom-color: hotpink;
+	border-bottom-color: #FDBCE5;
 }
 
 .section {
@@ -27,19 +28,18 @@ a:hover {
 	padding: 1vw 5vw;
 }
 
-#Sinopsis, #Referencias {
+#Sinopsis, #Impacto {
 	background-color: #f2f9fb;
 }
 
 #Necesidades {
-	/*background-color: #d93049;*/
   background-color: #B50128;
 	color: white;
 	display: flex;
 	flex-flow: row wrap;
 }
 
-#Impacto {
+#Referencias {
 	background-color: #0F607F;
 	color: white;
 }
@@ -82,7 +82,10 @@ a:hover {
     border-right: 0.3em solid black;
     border-top: 0.3em solid black;
     transform: rotate(-45deg);
-    text-decoration: none;
+}
+
+.to_top a:hover {
+	border-bottom-color: transparent;
 }
 
 .need_value, .need_title {
@@ -134,7 +137,7 @@ iframe, img {
 
 #top a:hover {
 	text-transform: uppercase;
-	border-bottom-color: hotpink;
+  border-bottom-color: #0F607F;
 }
 
 @media screen and (max-width: 700px) {
