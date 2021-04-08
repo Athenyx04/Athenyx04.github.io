@@ -20,6 +20,7 @@ p {
 
 a {
 	word-wrap: break-word;
+  text-decoration: none;
 }
 
 
@@ -52,7 +53,6 @@ a {
     border-right: 0.3em solid black;
     border-top: 0.3em solid black;
     transform: rotate(-45deg);
-	text-decoration: none;
 }
 
 .need_title.main {
