@@ -28,11 +28,21 @@ a {
 	font-size: 2.5em;
 	font-weight: 700;
 	text-transform: capìtalize;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  border-radius: 0.2em;
+  padding: 1vw;
 }
 
 .need {
 	margin: 3vw;
 	overflow: auto;
+}
+
+.to_top {
+  margin: auto;
+  padding-top: 1vw;
+  text-align: center;
 }
 
 .to_top a {
@@ -67,11 +77,12 @@ iframe, img {
 	background-color: #333;
 	color: transparent;
 	overflow: hidden;
+  margin: auto;
+  text-align: center;
 }
 
 #top a {
-	float: left;
-	display: block;
+	display: inline-block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
