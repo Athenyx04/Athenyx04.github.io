@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Spectral:ital,wght@0,700;1,500&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #daede2;
+	font-family: 'Rubik', sans-serif;
+	padding: 1%;
+	color: #333;
+}
+
+p {
+	text-align: justify;
+}
+
+a {
+	color: hotpink;
+	word-wrap: break-word;
+}
+
+.section {
+	margin-left: 200px;
+	padding: 1vw 5vw;
+}
+
+#Sinopsis, #Referencias {
+	background-color: #f2f9fb;
+}
+
+#Necesidades {
+	background-color: #d93049;
+	color: white;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#Impacto {
+	background-color: #77c4d3;
+	color: white;
+}
+
+#Tecnologias {
+	background-color: #3a4453;
+	color: white;
+}
+
+
+.section_title {
+	font-family: 'Spectral', serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	text-transform: capìtalize;
+}
+
+.need {
+	margin: 1vw;
+	padding-bottom: 25px;
+	overflow: auto;
+	border: 2px solid white;
+	border-radius: 5px;
+	max-width: 45%;
+}
+
+.to_top {
+	margin-top: 1vw;
+	width: 100%;
+}
+
+.to_top a {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    border-right: 0.3em solid black;
+    border-top: 0.3em solid black;
+    transform: rotate(-45deg);
+	text-decoration: none;
+}
+
+.need_value, .need_title {
+	padding: 0 2vw;
+}
+
+hr, .need_title.main {
+	display: none;
+}
+
+.need_value.main {
+	font-family: 'Spectral', serif;
+	font-size: 1.75em;
+	font-weight: 500;
+	text-transform: capitalize;
+	font-style: italic;
+	display: block;
+}
+
+iframe, img {
+	margin: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	padding: 0 2vw;
+	box-sizing: border-box;
+}
+
+#top {
+	width: 200px;
+	background-color: #e3e58b;
+	position: fixed;
+	height: 100%;
+	top: 0;
+	padding-top: 5vh;
+	box-sizing: border-box;
+	color: transparent;
+	overflow: auto;
+}
+
+#top a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+	border-bottom: solid 1px transparent;
+	transition: border-bottom-color .2s ease;
+}
+
+#top a:hover {
+	text-transform: uppercase;
+	border-bottom-color: red;
+}
+
+hr {
+	border: 0;
+	height: 3px;
+	background: black;
+	background-image: linear-gradient(to right, #ccc, black, #ccc);
+}
+
+@media screen and (max-width: 700px) {
+	#top {
+		width: 100%;
+		position: relative;
+		height: auto;
+	}
+	#top a {float: left;}
+	.section {margin-left: 0;}
+	.need {max-width: 100%;}
+}
+
+@media screen and (max-width: 400px) {
+	#top a {
+		text-align: center;
+		float: none;
+	}
+}
