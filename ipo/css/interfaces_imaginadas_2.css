@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Spectral:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&family=Spectral&display=swap');
 html {
 	scroll-behavior: smooth;
 }
 
 body {
 	background: #daede2;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Spectral', serif;
 	color: #333;
   margin: 0;
 }
@@ -55,15 +55,17 @@ a:hover {
 
 
 .section_title {
-	font-family: 'Spectral', serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 2.5em;
 	font-weight: 700;
-	text-transform: capìtalize;
+	text-transform: capitalize;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 .need {
 	margin: 1vw;
-	padding-bottom: 25px;
+  padding-bottom: 1vw;
 	overflow: auto;
 	border: 2px solid white;
 	border-radius: 5px;
@@ -96,7 +98,7 @@ hr, .need_title.main {
 }
 
 .need_value.main {
-	font-family: 'Spectral', serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 1.75em;
 	font-weight: 500;
 	text-transform: capitalize;
@@ -129,13 +131,14 @@ iframe, img {
 #top a {
 	display: block;
 	color: black;
+  font-family: 'Rubik', sans-serif;
 	text-align: center;
 	padding: 16px;
 }
 
 #top a:hover {
 	text-transform: uppercase;
-	border-bottom-color: red;
+	border-bottom-color: hotpink;
 }
 
 @media screen and (max-width: 700px) {
