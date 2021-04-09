@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="331" height="331" viewBox="0 0 331 331">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fc0;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #039;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Elipse_3" data-name="Elipse 3" class="cls-1" cx="166" cy="166" r="150"/>
+  <circle id="Elipse_4" data-name="Elipse 4" class="cls-2" cx="161" cy="170" r="145"/>
+  <path id="Forma_1" data-name="Forma 1" class="cls-3" d="M116.114,207.717l-0.076-86.5,189.969-97.2L229.851,215.843l-90.232,11.415-6.8-5.656,126-136.839,5.913-15.91L122.918,213.374Z"/>
+  <path id="Forma_3" data-name="Forma 3" class="cls-3" d="M24.7,219.149l48.905-5.8,42.233-5.769L119,207l6,4L63.918,277.9S48.767,263.145,42,253C34.926,241.575,27.892,231.072,24.7,219.149Z"/>
+  <path id="Forma_4" data-name="Forma 4" class="cls-3" d="M73,285l49.635-52.99L133.7,220.834l5.588,5.533,0.429,86.744c-14.483-1.481-24-4.821-34.718-9.111C98.958,302.192,83.1,292.964,73,285Z"/>
+  <path id="Forma_5" data-name="Forma 5" class="cls-4" d="M73.96,284.521L258.7,85.647l5.484-15.6L61.678,274.573a33.482,33.482,0,0,0,5.588,5.533A40.8,40.8,0,0,0,73.96,284.521Z"/>
+</svg>
