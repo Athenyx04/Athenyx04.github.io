@@ -151,7 +151,7 @@ iframe, img {
 	.need {max-width: 100%;}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 	#top a {
 		text-align: center;
 		float: none;
