@@ -199,7 +199,7 @@ function sortList(flag){
 		}
 	}
 	if(cmp1<0){
-		str="Battle No."+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
+		str="Batalla No."+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% ordenado.";
 		document.getElementById("battleNumber").innerHTML=str;
 		showResult();
 		finishFlag=1;
@@ -215,13 +215,13 @@ function showResult(){
 	var str="";
 	var strx="!submit 2021 ";
 	var i;
-	str+="<table style=\"width:200px; font-size:12px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #fff; border-collapse:collapse; background-color:#00002a;\" align=\"center\">";
-	str+="<tr><td style=\"color:#000; background-color:#fff; text-align:center;\">Rank<\/td><td style=\"color:#000; background-color:#fff; text-align:left;\">Entry<\/td><\/tr>";
+	str+="<table style=\"width:350px; font-size:14px; font-family: 'Lato', sans-serif; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #fff; border-collapse:collapse; background-color:#5e6ddd; color: white;\" align=\"center\">";
+	str+="<tr><td style=\"color:#000; background-color:#fff; text-align:center;\">Puesto<\/td><td style=\"color:#000; background-color:#fff; text-align:center;\">Canción<\/td><\/tr>";
 	for(i=0;i<namMember.length;i++){
 		str+="<tr style=\"height: 75px;\"><td style=\"border:1px solid #fff; text-align:right; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #fff; padding-left:5px;\">"+namMember[lstMember[0][i]]+"<\/td><\/tr>";
 		strx+=namMember[lstMember[0][i]].replace("<img src=flags/","").replace(/\.png[\s\S]*/,"");
-		strx+=", "
-		
+		strx+=", ";
+
 		if(i<namMember.length-1){
 			if(equal[lstMember[0][i]]==lstMember[0][i+1]){
 				sameRank++;
@@ -235,7 +235,7 @@ function showResult(){
 	str+="<\/table><\/div>";
 	strx=strx.replace(/, \B/,"");
 	document.getElementById("resultField").innerHTML=str;
-	document.getElementById("screenieButton").innerHTML="<br><button onclick=\"screencap()\">¡Captura de pantalla!<\/button>";
+	document.getElementById("screenieButton").innerHTML="<br>";
 	let s1results=decideQualifiers(semiOne);
 	let s2results=decideQualifiers(semiTwo);
 	document.getElementById("semi1ResultField").innerHTML=s1results;
@@ -249,14 +249,14 @@ function decideQualifiers(semiArray){
 	let ranking=1;
 	let str="";
 	let i;
-	str+="<table style=\"width:200px; font-size:12px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #fff; border-collapse:collapse; background-color:#00002a;\" align=\"center\">";
-	str+="<tr><td style=\"color:#000; background-color:#fff; text-align:center;\">Rank<\/td><td style=\"color:#000; background-color:#fff; text-align:left;\">Entry<\/td><td style=\"color:#000; background-color:#fff; text-align:center;\">Qualifier?</td><\/tr>";
+	str+="<table style=\"width:200px; font-size:12px; font-family: 'Lato', sans-serif; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #fff; border-collapse:collapse; background-color:#5e6ddd; color: white;\" align=\"center\">";
+	str+="<tr><td style=\"color:#000; background-color:#fff; text-align:center;\">Puesto<\/td><td style=\"color:#000; background-color:#fff; text-align:left;\">Canción<\/td><td style=\"color:#000; background-color:#fff; text-align:center;\">¿Clasifica?</td><\/tr>";
 	for(i=0;i<namMember.length;i++){
 		if(semiArray.indexOf(namMember[lstMember[0][i]])>-1){
 			str+="<tr style=\"height: 75px; background-color:";
 			str+=(ranking<7?"green":"red");
 			str+="\"><td style=\"border:1px solid #fff; text-align:right; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #fff; padding-left:5px;\">"+namMember[lstMember[0][i]]+"<\/td><td style=\"border:1px solid #fff;\" align=\"center\">";
-			str+=(ranking<7?"Q":"NQ");
+			str+=(ranking<7?"C":"NC");
 			str+="</td></tr>";
 			ranking++;
 		}
@@ -329,6 +329,7 @@ body{
 	border: 1px solid #000;
 	background-color: #5e6ddd;
 	color: white;
+	user-select: none;
 }
 #rightField{
 	width: 200px;
@@ -336,6 +337,7 @@ body{
 	border: 1px solid #000;
 	background-color: #5e6ddd;
 	color: white;
+	user-select: none;
 }
 //-->
 <!--
@@ -370,7 +372,7 @@ A{text-decoration:none}a:hover{color:#9cf}</style>
 	</tr>
 	<tr>
 
-		<td id="battleNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;">Battle No.1<br>0% sorted.</td>
+		<td id="battleNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;">Batalla No.1<br>0% ordenado.</td>
 	</tr>
 	<tr>
 		<td id="leftField" onclick="if(finishFlag==0)sortList(-1);" rowspan="2" style="text-align:center;"></td>
@@ -395,9 +397,11 @@ A{text-decoration:none}a:hover{color:#9cf}</style>
 
 <script type="text/javascript">initList();showImage();</script>
 
+<div id="screenieButton" style="text-align: center;"></div>
+
 <div id="qualifierToggle" style="display: none;">
     <p><input type="checkbox" id="showq" name="showq" onclick="toggleQualifiers()">
-    <label for="showq">¿Ver mis clasificados?</label></p>
+    <label for="showq">¿Mostrar mis clasificados?</label></p>
 </div>
 <div id="qualifiers" style="width: 450px; margin-left: auto; margin-right: auto; overflow: hidden; margin-top: 30px; display: none;">
     <div id="semi1ResultField" style="text-align: center; float: left;"></div>
