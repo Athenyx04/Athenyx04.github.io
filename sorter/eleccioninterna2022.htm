@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Comparador de La Elección Interna 2022 // E-S</title>
+<style>li{font-size:10px}</style>
+<script type="text/javascript">
+var namMember=new Array(
+"<img src=flags/es_states/ct.png> <b>Álvaro Soler</b><br><i>Magia</i>",
+"<img src=flags/es_states/an.png> <b>Ana Mena</b><br><i>A un paso de la luna</i>",
+"<img src=flags/es_states/md.png> <b>C. Tangana</b><br><i>Tú me dejaste de querer</i>",
+"<img src=flags/es_states/nc.png> <b>Chica Sobresalto</b><br><i>Fusión del núcleo</i>",
+"<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
+"<img src=flags/es_states/ct.png> <b>Ladilla Rusa</b><br><i>Todos los días lo mismo</i>",
+"<img src=flags/es_states/an.png> <b>Lola Índigo</b><br><i>La niña de la escuela</i>",
+"<img src=flags/es_states/an.png> <b>María José Llergo</b><br><i>La luz</i>",
+"<img src=flags/es_states/an.png> <b>Marta Sango</b><br><i>¿Qué más quieres de mí?</i>",
+"<img src=flags/es_states/ct.png> <b>Rigoberta Bandini</b><br><i>Perra</i>",
+"<img src=flags/es_states/ga.png> <b>Tanxugueiras</b><br><i>Figa</i>",
+"<img src=flags/es_states/an.png> <b>Zahara</b><br><i>Merichane</i>",
+"<img src=flags/es_states/an.png> <b>Álvaro de Luna</b><br><i>Juramento eterno de sal</i>",
+"<img src=flags/es_states/cn.png> <img src=flags/es_states/an.png> <b>Fuel Fandango</b><br><i>Iballa</i>",
+"<img src=flags/es_states/ct.png> <b>Nil Moliner</b><br><i>Libertad</i>",
+"<img src=flags/es_states/ga.png> <b>Baiuca</b><br><i>Veleno</i>",
+"<img src=flags/es_states/pv.png> <b>La Oreja de Van Gogh</b><br><i>Sirenas</i>",
+"<img src=flags/es_states/md.png> <b>Fangoria</b><br><i>Momentismo absoluto</i>",
+"<img src=flags/es_states/an.png> <b>María Peláe</b><br><i>Mi tío Juan</i>",
+"<img src=flags/es_states/md.png> <b>Miss Caffeina</b><br><i>Punto muerto</i>",
+"<img src=flags/es_states/cm.png> <b>Rozalén</b><br><i>Y busqué</i>",
+"<img src=flags/es_states/vc.png> <b>Guitarricadelafuente</b><br><i>Mil y una noches</i>",
+"<img src=flags/es_states/ct.png> <b>Siderland</b><br><i>Només vull amor</i>",
+"<img src=flags/es_states/vc.png> <b>Sienna</b><br><i>Se me para el tiempo</i>");
+
+let semiOne=new Array(
+"<img src=flags/es_states/an.png> <b>Lola Índigo</b><br><i>La niña de la escuela</i>",
+"<img src=flags/es_states/vc.png> <b>Sienna</b><br><i>Se me para el tiempo</i>",
+"<img src=flags/es_states/md.png> <b>Fangoria</b><br><i>Momentismo absoluto</i>",
+"<img src=flags/es_states/nc.png> <b>Chica Sobresalto</b><br><i>Fusión del núcleo</i>",
+"<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
+"<img src=flags/es_states/ga.png> <b>Baiuca</b><br><i>Veleno</i>",
+"<img src=flags/es_states/md.png> <b>Miss Caffeina</b><br><i>Punto muerto</i>",
+"<img src=flags/es_states/md.png> <b>C. Tangana</b><br><i>Tú me dejaste de querer</i>",
+"<img src=flags/es_states/cn.png> <img src=flags/es_states/an.png> <b>Fuel Fandango</b><br><i>Iballa</i>",
+"<img src=flags/es_states/ct.png> <b>Álvaro Soler</b><br><i>Magia</i>",
+"<img src=flags/es_states/vc.png> <b>Guitarricadelafuente</b><br><i>Mil y una noches</i>",
+"<img src=flags/es_states/ct.png> <b>Rigoberta Bandini</b><br><i>Perra</i>");
+
+let semiTwo=new Array(
+"<img src=flags/es_states/an.png> <b>Ana Mena</b><br><i>A un paso de la luna</i>",
+"<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
+"<img src=flags/es_states/ct.png> <b>Ladilla Rusa</b><br><i>Todos los días lo mismo</i>",
+"<img src=flags/es_states/an.png> <b>María José Llergo</b><br><i>La luz</i>",
+"<img src=flags/es_states/an.png> <b>Marta Sango</b><br><i>¿Qué más quieres de mí?</i>",
+"<img src=flags/es_states/ga.png> <b>Tanxugueiras</b><br><i>Figa</i>",
+"<img src=flags/es_states/an.png> <b>Zahara</b><br><i>Merichane</i>",
+"<img src=flags/es_states/ct.png> <b>Nil Moliner</b><br><i>Libertad</i>",
+"<img src=flags/es_states/pv.png> <b>La Oreja de Van Gogh</b><br><i>Sirenas</i>",
+"<img src=flags/es_states/an.png> <b>María Peláe</b><br><i>Mi tío Juan</i>",
+"<img src=flags/es_states/cm.png> <b>Rozalén</b><br><i>Y busqué</i>",
+"<img src=flags/es_states/ct.png> <b>Siderland</b><br><i>Només vull amor</i>");
+
+var lstMember=new Array();
+var parent=new Array();
+var equal=new Array();
+var rec=new Array();
+var cmp1,cmp2;
+var head1,head2;
+var nrec;
+
+var numQuestion;
+var totalSize;
+var finishSize;
+var finishFlag;
+
+let showQualifiers=false;
+let showDiscord=false;
+
+function initList(){
+	var n=0;
+	var mid;
+	var i;
+	lstMember[n]=new Array();
+	for(i=0;i<namMember.length;i++){
+		lstMember[n][i]=i;
+	}
+	parent[n]=-1;
+	totalSize=0;
+	n++;
+	for(i=0;i<lstMember.length;i++){
+		if(lstMember[i].length>=2){
+			mid=Math.ceil(lstMember[i].length/2);
+			lstMember[n]=new Array();
+			lstMember[n]=lstMember[i].slice(0,mid);
+			totalSize+=lstMember[n].length;parent[n]=i;
+			n++;
+			lstMember[n]=new Array();
+			lstMember[n]=lstMember[i].slice(mid,lstMember[i].length);
+			totalSize+=lstMember[n].length;parent[n]=i;
+			n++;
+		}
+	}
+	for(i=0;i<namMember.length;i++){
+		rec[i]=0;
+	}
+	nrec=0;
+	for(i=0;i<=namMember.length;i++){
+		equal[i]=-1;
+	}
+	cmp1=lstMember.length-2;
+	cmp2=lstMember.length-1;
+	head1=0;
+	head2=0;
+	numQuestion=1;
+	finishSize=0;
+	finishFlag=0;
+}
+
+function sortList(flag){
+	var i;
+	var str;
+	if(flag<0){
+		rec[nrec]=lstMember[cmp1][head1];
+		head1++;
+		nrec++;
+		finishSize++;
+		while(equal[rec[nrec-1]]!=-1){
+			rec[nrec]=lstMember[cmp1][head1];
+			head1++;
+			nrec++;
+			finishSize++;
+		}
+	}
+	else if(flag>0){
+		rec[nrec]=lstMember[cmp2][head2];
+		head2++;
+		nrec++;
+		finishSize++;
+		while(equal[rec[nrec-1]]!=-1){
+			rec[nrec]=lstMember[cmp2][head2];
+			head2++;
+			nrec++;
+			finishSize++;
+		}
+	}
+	else{
+		rec[nrec]=lstMember[cmp1][head1];
+		head1++;
+		nrec++;
+		finishSize++;
+		while(equal[rec[nrec-1]]!=-1){
+			rec[nrec]=lstMember[cmp1][head1];
+			head1++;
+			nrec++;
+			finishSize++;
+		}
+		equal[rec[nrec-1]]=lstMember[cmp2][head2];
+		rec[nrec]=lstMember[cmp2][head2];
+		head2++;
+		nrec++;
+		finishSize++;
+		while(equal[rec[nrec-1]]!=-1){
+			rec[nrec]=lstMember[cmp2][head2];
+			head2++;
+			nrec++;
+			finishSize++;
+		}
+	}
+	if(head1<lstMember[cmp1].length&&head2==lstMember[cmp2].length){
+		while(head1<lstMember[cmp1].length){
+			rec[nrec]=lstMember[cmp1][head1];
+			head1++;
+			nrec++;
+			finishSize++;
+		}
+	}
+	else if(head1==lstMember[cmp1].length&&head2<lstMember[cmp2].length){
+		while(head2<lstMember[cmp2].length){
+			rec[nrec]=lstMember[cmp2][head2];
+			head2++;
+			nrec++;
+			finishSize++;
+		}
+	}
+	if(head1==lstMember[cmp1].length&&head2==lstMember[cmp2].length){
+		for(i=0;i<lstMember[cmp1].length+lstMember[cmp2].length;i++){
+			lstMember[parent[cmp1]][i]=rec[i];
+		}
+		lstMember.pop();
+		lstMember.pop();
+		cmp1=cmp1-2;
+		cmp2=cmp2-2;
+		head1=0;
+		head2=0;
+		if(head1==0&&head2==0){
+			for(i=0;i<namMember.length;i++){
+				rec[i]=0;
+			}
+			nrec=0;
+		}
+	}
+	if(cmp1<0){
+		str="Battle No."+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
+		document.getElementById("battleNumber").innerHTML=str;
+		showResult();
+		finishFlag=1;
+	}
+	else{
+		showImage();
+	}
+}
+
+function showResult(){
+	var ranking=1;
+	var sameRank=1;
+	var str="";
+	var strx="!submit 2021 ";
+	var i;
+	str+="<table style=\"width:200px; font-size:12px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #fff; border-collapse:collapse; background-color:#00002a;\" align=\"center\">";
+	str+="<tr><td style=\"color:#000; background-color:#fff; text-align:center;\">Rank<\/td><td style=\"color:#000; background-color:#fff; text-align:left;\">Entry<\/td><\/tr>";
+	for(i=0;i<namMember.length;i++){
+		str+="<tr style=\"height: 75px;\"><td style=\"border:1px solid #fff; text-align:right; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #fff; padding-left:5px;\">"+namMember[lstMember[0][i]]+"<\/td><\/tr>";
+		strx+=namMember[lstMember[0][i]].replace("<img src=flags/","").replace(/\.png[\s\S]*/,"");
+		strx+=", "
+		
+		if(i<namMember.length-1){
+			if(equal[lstMember[0][i]]==lstMember[0][i+1]){
+				sameRank++;
+			}
+			else{
+				ranking+=sameRank;
+				sameRank=1;
+			}
+		}
+	}
+	str+="<\/table><\/div>";
+	strx=strx.replace(/, \B/,"");
+	document.getElementById("resultField").innerHTML=str;
+	document.getElementById("screenieButton").innerHTML="<br><button onclick=\"screencap()\">¡Captura de pantalla!<\/button>";
+	let s1results=decideQualifiers(semiOne);
+	let s2results=decideQualifiers(semiTwo);
+	document.getElementById("semi1ResultField").innerHTML=s1results;
+	document.getElementById("semi2ResultField").innerHTML=s2results;
+	document.getElementById("qualifierToggle").style.display="inherit";
+	document.getElementById("discordToggle").style.display="inherit";
+	document.getElementById("discordlist").innerHTML=strx;
+}
+
+function decideQualifiers(semiArray){
+	let ranking=1;
+	let str="";
+	let i;
+	str+="<table style=\"width:200px; font-size:12px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #fff; border-collapse:collapse; background-color:#00002a;\" align=\"center\">";
+	str+="<tr><td style=\"color:#000; background-color:#fff; text-align:center;\">Rank<\/td><td style=\"color:#000; background-color:#fff; text-align:left;\">Entry<\/td><td style=\"color:#000; background-color:#fff; text-align:center;\">Qualifier?</td><\/tr>";
+	for(i=0;i<namMember.length;i++){
+		if(semiArray.indexOf(namMember[lstMember[0][i]])>-1){
+			str+="<tr style=\"height: 75px; background-color:";
+			str+=(ranking<7?"green":"red");
+			str+="\"><td style=\"border:1px solid #fff; text-align:right; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #fff; padding-left:5px;\">"+namMember[lstMember[0][i]]+"<\/td><td style=\"border:1px solid #fff;\" align=\"center\">";
+			str+=(ranking<7?"Q":"NQ");
+			str+="</td></tr>";
+			ranking++;
+		}
+	}
+	str+="<\/table><\/div>";
+	return str;
+}
+
+function showImage(){
+	var str0="Batalla No."+numQuestion+"<br>"+Math.floor(finishSize*100/totalSize)+"% ordenado.";
+	var str1=""+toNameFace(lstMember[cmp1][head1]);
+	var str2=""+toNameFace(lstMember[cmp2][head2]);
+	document.getElementById("battleNumber").innerHTML=str0;
+	document.getElementById("leftField").innerHTML=str1;
+	document.getElementById("rightField").innerHTML=str2;
+	numQuestion++;
+}
+
+function toNameFace(n){
+	var str=namMember[n];
+	return str;
+}
+
+function toggleQualifiers(){
+	showQualifiers=!showQualifiers;
+	if(showQualifiers){
+		document.getElementById("qualifiers").style.display="inherit";
+	}
+	else{
+		document.getElementById("qualifiers").style.display="none";
+	}
+}
+
+</script>
+
+
+<!-- hey you don't steal my code >:( ~gerbear -->
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+p{
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+body{
+	background-color: #f7f7f7;
+	color: black;
+}
+#mainTable{
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 410px;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: separate;
+	border-spacing: 10px 5px;
+}
+#resultField,#semi1ResultField,#semi2ResultField{
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+#leftField{
+	width: 200px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color: #5e6ddd;
+	color: white;
+}
+#rightField{
+	width: 200px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color: #5e6ddd;
+	color: white;
+}
+//-->
+<!--
+A{text-decoration:none}a:hover{color:#9cf}</style>
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0099ff" vlink="#0099ff" alink="#0099ff">
+<center><img src="lei.jpg" style="width:480px;height:270px;"></center>
+<table id="mainTable" align="center">
+	<tbody>
+	<tr>
+		<p>&nbsp;</p>
+		<td colspan=3><p>¡Bienvenidos al comparador de La Elección Interna 2022 de Eurovision-Spain! ¿Aún no te decides por tus favoritos? Aquí tendrás tu respuesta: esta herramienta te ayudará a ordenarlos.</p>
+
+<p><b>Instrucciones:</b> Se te dan dos opciones. Haz click en la que más te guste, y continúa hasta el final. <!--To prevent ties, avoid the "I Like Both" and "No Opinion" buttons! Only use them if you really really really absolutely can't choose.--></p>
+
+<p>Esta es una forma 100% precisa de conocer como ordenas las canciones DE VERDAD. Si piensas que el resultado está mal, o no has elegido una opción correctamente, o te estás mintiendo a ti mismo. ;) Esto es un proceso exhaustivo y metódico.</p>
+
+<p>Para compartir el ranking con tus amigos, ¡haz una captura de pantalla de los resultados finales!</p>
+
+<p>Con esta herramienta, puedes ver tus clasificados de cada una de las semifinales. Para ello, marca la caja que aparece al terminar.</p>
+
+<p>¡Este comparador está patrocinado por <a href="https://eurovision-spain.com" target="_new">Eurovision-Spain</a>!</p>
+
+<p>¡Sígueme en <a href="https://twitter.com/athenyx04">Twitter</a>! ^^</p>
+
+<p>Código originalmente de <a href="https://twitter.com/bathkame">bathkame</a> y <a href="https://twitter.com/mr_gerbear">Gerbear</a>. Clasificación de semifinales por <a href="https://twitter.com/elainovision">Elainovision</a>.</p>
+
+<p>¡Vamos!</p></td>
+	</tr>
+	<tr>
+
+		<td id="battleNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;">Battle No.1<br>0% sorted.</td>
+	</tr>
+	<tr>
+		<td id="leftField" onclick="if(finishFlag==0)sortList(-1);" rowspan="2" style="text-align:center;"></td>
+		<!-- <td class="middleField" onclick="if(finishFlag==0)sortList(0);" style="text-align:center;">
+
+			I Like Both
+		</td> -->
+
+		<td id="rightField" onclick="if(finishFlag==0)sortList(1);" rowspan="2" style="text-align:center;"></td>
+	</tr>
+	<!-- <tr>
+		<td class="middleField" onclick="if(finishFlag==0)sortList(0);"style="text-align:center;">
+			No Opinion
+		</td>
+
+	</tr> -->
+</tbody></table><br><br>
+<div id="resultField" style="text-align: center;">
+<br><br>
+</div>
+
+
+<script type="text/javascript">initList();showImage();</script>
+
+<div id="qualifierToggle" style="display: none;">
+    <p><input type="checkbox" id="showq" name="showq" onclick="toggleQualifiers()">
+    <label for="showq">¿Ver mis clasificados?</label></p>
+</div>
+<div id="qualifiers" style="width: 450px; margin-left: auto; margin-right: auto; overflow: hidden; margin-top: 30px; display: none;">
+    <div id="semi1ResultField" style="text-align: center; float: left;"></div>
+    <div id="semi2ResultField" style="text-align: center; float: right;"></div>
+</div>
+
+</body>
+</html>
