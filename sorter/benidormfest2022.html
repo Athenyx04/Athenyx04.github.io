@@ -2,62 +2,52 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Comparador de La Elección Interna 2022 // E-S</title>
+<title>Comparador del Benidorm Fest 2022</title>
 <style>li{font-size:10px}</style>
 <script type="text/javascript">
 var namMember=new Array(
-"<img src=flags/es_states/ct.png> <b>Álvaro Soler</b><br><i>Magia</i>",
-"<img src=flags/es_states/an.png> <b>Ana Mena</b><br><i>A un paso de la luna</i>",
-"<img src=flags/es_states/md.png> <b>C. Tangana</b><br><i>Tú me dejaste de querer</i>",
-"<img src=flags/es_states/nc.png> <b>Chica Sobresalto</b><br><i>Fusión del núcleo</i>",
-"<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
-"<img src=flags/es_states/ct.png> <b>Ladilla Rusa</b><br><i>Todos los días lo mismo</i>",
-"<img src=flags/es_states/an.png> <b>Lola Índigo</b><br><i>La niña de la escuela</i>",
-"<img src=flags/es_states/an.png> <b>María José Llergo</b><br><i>La luz</i>",
-"<img src=flags/es_states/an.png> <b>Marta Sango</b><br><i>¿Qué más quieres de mí?</i>",
-"<img src=flags/es_states/ct.png> <b>Rigoberta Bandini</b><br><i>Perra</i>",
-"<img src=flags/es_states/ga.png> <b>Tanxugueiras</b><br><i>Figa</i>",
-"<img src=flags/es_states/an.png> <b>Zahara</b><br><i>Merichane</i>",
-"<img src=flags/es_states/an.png> <b>Álvaro de Luna</b><br><i>Juramento eterno de sal</i>",
-"<img src=flags/es_states/cn.png> <img src=flags/es_states/an.png> <b>Fuel Fandango</b><br><i>Iballa</i>",
-"<img src=flags/es_states/ct.png> <b>Nil Moliner</b><br><i>Libertad</i>",
-"<img src=flags/es_states/ga.png> <b>Baiuca</b><br><i>Veleno</i>",
-"<img src=flags/es_states/pv.png> <b>La Oreja de Van Gogh</b><br><i>Sirenas</i>",
-"<img src=flags/es_states/md.png> <b>Fangoria</b><br><i>Momentismo absoluto</i>",
-"<img src=flags/es_states/an.png> <b>María Peláe</b><br><i>Mi tío Juan</i>",
-"<img src=flags/es_states/md.png> <b>Miss Caffeina</b><br><i>Punto muerto</i>",
-"<img src=flags/es_states/cm.png> <b>Rozalén</b><br><i>Y busqué</i>",
-"<img src=flags/es_states/vc.png> <b>Guitarricadelafuente</b><br><i>Mil y una noches</i>",
-"<img src=flags/es_states/ct.png> <b>Siderland</b><br><i>Només vull amor</i>",
-"<img src=flags/es_states/vc.png> <b>Sienna</b><br><i>Se me para el tiempo</i>");
+"<img src=flags/es_states/ex.png> <b>Azúcar Moreno</b><br><i>Postureo</i>",
+"<img src=flags/es_states/an.png> <b>Blanca Paloma</b><br><i>Secreto de agua</i>",
+"<img src=flags/cu.png> <b>Chanel</b><br><i>Slo Mo</i>",
+"<img src=flags/es_states/an.png> <b>Gonzalo Hermida</b><br><i>Quién lo diría</i>",
+"<img src=flags/cl.png> <b>Javiera Mena</b><br><i>Culpa</i>",
+"<img src=flags/es_states/ct.png> <b>Luna Ki</b><br><i>Voy a morir</i>",
+"<img src=flags/es_states/an.png> <b>Marta Sango</b><br><i>Sigues en mi mente</i>",
+"<img src=flags/es_states/md.png> <b>Rayden</b><br><i>Calle de la llorería</i>",
+"<img src=flags/es_states/ib.png> <b>Sara Deop</b><br><i>Make You Say</i>",
+"<img src=flags/es_states/ct.png> <b>Rigoberta Bandini</b><br><i>Ay mamá</i>",
+"<img src=flags/es_states/ga.png> <b>Tanxugueiras</b><br><i>Terra</i>",
+"<img src=flags/es_states/an.png><img src=flags/do.png><img src=flags/es_states/ib.png><img src=flags/es_states/md.png> <b>Unique</b><br><i>Mejores</i>",
+"<img src=flags/es_states/vc.png> <b>Varry Brava</b><br><i>Raffaella</i>",
+"<img src=flags/es_states/md.png> <b>Xeinn</b><br><i>Eco</i>");
 
-let semiOne=new Array(
-"<img src=flags/es_states/an.png> <b>Lola Índigo</b><br><i>La niña de la escuela</i>",
-"<img src=flags/es_states/vc.png> <b>Sienna</b><br><i>Se me para el tiempo</i>",
-"<img src=flags/es_states/md.png> <b>Fangoria</b><br><i>Momentismo absoluto</i>",
-"<img src=flags/es_states/nc.png> <b>Chica Sobresalto</b><br><i>Fusión del núcleo</i>",
-"<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
-"<img src=flags/es_states/ga.png> <b>Baiuca</b><br><i>Veleno</i>",
-"<img src=flags/es_states/md.png> <b>Miss Caffeina</b><br><i>Punto muerto</i>",
-"<img src=flags/es_states/md.png> <b>C. Tangana</b><br><i>Tú me dejaste de querer</i>",
-"<img src=flags/es_states/cn.png> <img src=flags/es_states/an.png> <b>Fuel Fandango</b><br><i>Iballa</i>",
-"<img src=flags/es_states/ct.png> <b>Álvaro Soler</b><br><i>Magia</i>",
-"<img src=flags/es_states/vc.png> <b>Guitarricadelafuente</b><br><i>Mil y una noches</i>",
-"<img src=flags/es_states/ct.png> <b>Rigoberta Bandini</b><br><i>Perra</i>");
+// let semiOne=new Array(
+// "<img src=flags/es_states/an.png> <b>Lola Índigo</b><br><i>La niña de la escuela</i>",
+// "<img src=flags/es_states/vc.png> <b>Sienna</b><br><i>Se me para el tiempo</i>",
+// "<img src=flags/es_states/md.png> <b>Fangoria</b><br><i>Momentismo absoluto</i>",
+// "<img src=flags/es_states/nc.png> <b>Chica Sobresalto</b><br><i>Fusión del núcleo</i>",
+// "<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
+// "<img src=flags/es_states/ga.png> <b>Baiuca</b><br><i>Veleno</i>",
+// "<img src=flags/es_states/md.png> <b>Miss Caffeina</b><br><i>Punto muerto</i>",
+// "<img src=flags/es_states/md.png> <b>C. Tangana</b><br><i>Tú me dejaste de querer</i>",
+// "<img src=flags/es_states/cn.png> <img src=flags/es_states/an.png> <b>Fuel Fandango</b><br><i>Iballa</i>",
+// "<img src=flags/es_states/ct.png> <b>Álvaro Soler</b><br><i>Magia</i>",
+// "<img src=flags/es_states/vc.png> <b>Guitarricadelafuente</b><br><i>Mil y una noches</i>",
+// "<img src=flags/es_states/ct.png> <b>Rigoberta Bandini</b><br><i>Perra</i>");
 
-let semiTwo=new Array(
-"<img src=flags/es_states/an.png> <b>Ana Mena</b><br><i>A un paso de la luna</i>",
-"<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
-"<img src=flags/es_states/ct.png> <b>Ladilla Rusa</b><br><i>Todos los días lo mismo</i>",
-"<img src=flags/es_states/an.png> <b>María José Llergo</b><br><i>La luz</i>",
-"<img src=flags/es_states/an.png> <b>Marta Sango</b><br><i>¿Qué más quieres de mí?</i>",
-"<img src=flags/es_states/ga.png> <b>Tanxugueiras</b><br><i>Figa</i>",
-"<img src=flags/es_states/an.png> <b>Zahara</b><br><i>Merichane</i>",
-"<img src=flags/es_states/ct.png> <b>Nil Moliner</b><br><i>Libertad</i>",
-"<img src=flags/es_states/pv.png> <b>La Oreja de Van Gogh</b><br><i>Sirenas</i>",
-"<img src=flags/es_states/an.png> <b>María Peláe</b><br><i>Mi tío Juan</i>",
-"<img src=flags/es_states/cm.png> <b>Rozalén</b><br><i>Y busqué</i>",
-"<img src=flags/es_states/ct.png> <b>Siderland</b><br><i>Només vull amor</i>");
+// let semiTwo=new Array(
+// "<img src=flags/es_states/an.png> <b>Ana Mena</b><br><i>A un paso de la luna</i>",
+// "<img src=flags/es_states/ct.png> <b>La Casa Azul</b><br><i>Entra en mi vida</i>",
+// "<img src=flags/es_states/ct.png> <b>Ladilla Rusa</b><br><i>Todos los días lo mismo</i>",
+// "<img src=flags/es_states/an.png> <b>María José Llergo</b><br><i>La luz</i>",
+// "<img src=flags/es_states/an.png> <b>Marta Sango</b><br><i>¿Qué más quieres de mí?</i>",
+// "<img src=flags/es_states/ga.png> <b>Tanxugueiras</b><br><i>Figa</i>",
+// "<img src=flags/es_states/an.png> <b>Zahara</b><br><i>Merichane</i>",
+// "<img src=flags/es_states/ct.png> <b>Nil Moliner</b><br><i>Libertad</i>",
+// "<img src=flags/es_states/pv.png> <b>La Oreja de Van Gogh</b><br><i>Sirenas</i>",
+// "<img src=flags/es_states/an.png> <b>María Peláe</b><br><i>Mi tío Juan</i>",
+// "<img src=flags/es_states/cm.png> <b>Rozalén</b><br><i>Y busqué</i>",
+// "<img src=flags/es_states/ct.png> <b>Siderland</b><br><i>Només vull amor</i>");
 
 var lstMember=new Array();
 var parent=new Array();
@@ -347,12 +337,12 @@ A{text-decoration:none}a:hover{color:#9cf}</style>
 </head>
 
 <body text="#000000" bgcolor="#ffffff" link="#0099ff" vlink="#0099ff" alink="#0099ff">
-<center><img src="lei.jpg" style="width:480px;height:270px;"></center>
+<center><img src="befest.png" style="width:480px;"></center>
 <table id="mainTable" align="center">
 	<tbody>
 	<tr>
 		<p>&nbsp;</p>
-		<td colspan=3><p>¡Bienvenidos al comparador de La Elección Interna 2022 de Eurovision-Spain! ¿Aún no te decides por tus favoritos? Aquí tendrás tu respuesta: esta herramienta te ayudará a ordenarlos.</p>
+		<td colspan=3><p>¡Bienvenidos al comparador del Benidorm Fest! ¿Aún no te decides por tus favoritos? Aquí tendrás tu respuesta: esta herramienta te ayudará a ordenarlos.</p>
 
 <p><b>Instrucciones:</b> Se te dan dos opciones. Haz click en la que más te guste, y continúa hasta el final. <!--To prevent ties, avoid the "I Like Both" and "No Opinion" buttons! Only use them if you really really really absolutely can't choose.--></p>
 
@@ -360,12 +350,11 @@ A{text-decoration:none}a:hover{color:#9cf}</style>
 
 <p>Para compartir el ranking con tus amigos, ¡haz una captura de pantalla de los resultados finales!</p>
 
-<p>Con esta herramienta, puedes ver tus clasificados de cada una de las semifinales. Para ello, marca la caja que aparece al terminar.</p>
+<!-- <p>Con esta herramienta, puedes ver tus clasificados de cada una de las semifinales. Para ello, marca la caja que aparece al terminar.</p> -->
 
-<p>¡Este comparador está patrocinado por <a href="https://eurovision-spain.com" target="_new">Eurovision-Spain</a>!</p>
+<!-- <p>¡Este comparador está patrocinado por <a href="https://eurovision-spain.com" target="_new">Eurovision-Spain</a>!</p> -->
 
-<p>¡Síguenos en Twitter aquí abajo! ^^</p>
-<p><a href="https://twitter.com/athenyx04">athenyx</a> y <a href="https://twitter.com/eurospaincom">Eurovision-Spain</a></p>
+<p>¡<a href="https://twitter.com/athenyx04">Sígueme</a> en Twitter! ^^</p>
 
 <p>Código originalmente de <a href="https://twitter.com/bathkame">bathkame</a> y <a href="https://twitter.com/mr_gerbear">Gerbear</a>. Clasificación de semifinales por <a href="https://twitter.com/elainovision">Elainovision</a>.</p>
 
